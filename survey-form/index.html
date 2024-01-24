@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <header>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' href='styles.css'>
+    <title>Survey Form</title>
+  </header>
+  <body>
+    <h1 id='title'>
+      Coaching Intake Questionnaire
+    </h1>
+    <p id='description'>
+      Please fill the form with the required information
+    </p>
+    <form id='survey-form'>
+      <fieldset>
+        <label id='name-label' for='name'>Name:</label>
+        <input id='name' type='text' placeholder='Enter your name' required/>
+
+        <label id='email-label' for='email'>Email:</label>
+        <input id='email' type='email' placeholder='Enter your email' required/>
+
+        <label id='number-label' for='rating'>Age:</label>
+        <input id='number' type='number' min='16' max='100' placeholder='Enter your age' required/>
+      </fieldset>
+
+      <fieldset>
+        <label for='dropdown'>How many days are you willing to train:</label>
+        <select id='dropdown'>
+          <option value='3'>3 days</option>
+          <option value='4'>4 days</option>
+          <option value='5'>5 days</option>
+          <option value='6'>6 days</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for='radio'>Do you have plans to compete in the future</label>
+        <label><input name='competing' value='yes' type='radio' class='radio' checked/>Yes</label>
+        <label><input name='competing' value='no' type='radio' class='radio'/>No</label>
+        <label><input name='competing' value='idk' type='radio' class="radio"/>Undecided</label>
+      </fieldset>
+
+      <fieldset>
+        <label for='checkbox'>What would you like to improve the most from this coaching experience? (Check all that apply)</label>
+        <label for='squat-checkbox'><input value='Squat' type='checkbox' class='checkbox' />Squat</label>
+        <label for='bench-checkbox'><input value='Bench' type='checkbox' class='checkbox'/>Bench</label>
+        <label for='deadlift-checkbox'><input value='Deadlift' type='checkbox'class='checkbox' />Deadlift</label>
+        <label for='total-checkbox'><input value='Total' type='checkbox' class='checkbox' checked/>Total</label>
+      </fieldset>
+
+      <fieldset>
+        <label>What did your previous training consist of?</label>
+        <textarea placeholder='Describe as detail as possible..' rows='5' cols='50'></textarea>
+      </fieldset>
+    
+      <input id='submit' type='submit'/>
+    </form>
+  </body>
+</html>
